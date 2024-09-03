@@ -4,9 +4,6 @@ import java.util.PriorityQueue;
 
 public class TopNLargestFromHashSet {
     public static PriorityQueue<Integer> findTopNLargest(HashSet<Integer> set, int N) {
-        if (set == null || set.size() < N) {
-            throw new IllegalArgumentException("Set must contain at least N numbers.");
-        }
 
         // Min-Heap to store the top N largest elements
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(N);
